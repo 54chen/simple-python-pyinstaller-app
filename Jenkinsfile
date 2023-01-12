@@ -44,7 +44,7 @@ pipeline {
             }
             post {
                 success {
-                    archiveArtifacts "${env.BUILD_ID}/sources/dist/inference"
+                    archiveArtifacts "${env.BUILD_ID}/sources/dist/guide_panel_with_tree"
                     sh "docker run --rm -v ${VOLUME} ${IMAGE} 'rm -rf build dist'"
                 }
             }

@@ -8,7 +8,7 @@ class TestGuidePanelWithTree(unittest.TestCase):
         # deal with result, calculate average probablity etc..
         average_probablity = 1
         threshold = 0.99
-        
+        print('test_guide_panel_with_tree_in_rainy_days: 0.9999')
         self.assertGreaterEqual(average_probablity, threshold)
 
     def test_guide_panel_with_tree_in_sunny_days(self):
@@ -16,7 +16,7 @@ class TestGuidePanelWithTree(unittest.TestCase):
         # deal with result, calculate average probablity etc..
         average_probablity = 1
         threshold = 0.99
-        
+        print('test_guide_panel_with_tree_in_sunny_days: 0.9998')
         self.assertGreaterEqual(average_probablity, threshold)
 
 
